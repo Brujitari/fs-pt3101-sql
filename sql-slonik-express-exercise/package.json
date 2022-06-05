@@ -1,6 +1,7 @@
 {
   "name": "sql-slonik-express-exercise",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Pokédex\u001b[A\u001b[B",
   "main": "index.js",
   "scripts": {
@@ -8,6 +9,18 @@
     "dev": "nodemon index.js",
     "docker": "docker-compose up"
   },
+=======
+  "description": "1. Comprueba que tienes corriendo los contenedores de `postgres` y `adminer` a través de `docker-compose`",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "db:alter:leaders": "node scripts/alter-leaders.js",
+    "db:alter:pokemons": "node scripts/alter-pokemons.js",
+    "db:alter": "npm run db:alter:leaders && npm run db:alter:pokemons"
+  },
+  "keywords": [],
+>>>>>>> ca7191cbb2cfdde1d894cec6817af7cd5ce994c4
   "author": "",
   "license": "ISC",
   "dependencies": {
